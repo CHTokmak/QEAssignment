@@ -1,0 +1,20 @@
+# Kullanıcı adı kısmı valid: <KullanıcıAdı> kullanıcısı ile doldurulur.
+* "inputBoxUserName" elementinin görünür olması kontrol edilir
+* "inputBoxUserName" elementi varsa tıkla "30"
+* "inputBoxUserName" li elementi bul, temizle ve <KullanıcıAdı> değerini yaz
+
+# Password kısmı valid: <password> şifresi ile doldurulur.
+* "inputBoxPassword" elementinin görünür olması kontrol edilir
+* "inputBoxPassword" elementi varsa tıkla "30"
+* "inputBoxPassword" li elementi bul, temizle ve <password> değerini yaz
+
+# Login butonuna basılarak login olunmaya çalışılır.
+* "loginButton" elementinin görünür olması kontrol edilir
+* "loginButton" elementi varsa tıkla "30"
+
+# Login sayfasının yönlendirmesi kontrol edilir.
+* "logoutButton" elementinin görünür olması kontrol edilir
+
+# Invalid mesajı alınır: <Mesaj>.
+* "invalidMesajı" elementinin görünür olması kontrol edilir
+* "invalidMesajı" elementinin text değeri <Mesaj> değerine eşit mi
