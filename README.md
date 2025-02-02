@@ -1,33 +1,43 @@
-## About this template
+## Bu Şablon Ne İçerir
 
-This is a template to get started with a Gauge project that uses Selenium as the driver to interact with a web browser.
+Bu şablon içerisinde selenium, gauge, maven temelli bdd bir web test otomasyon şablonu bulunmaktadır.
+Bu tool aynı zamanda test koşumları sonrası koşulan testlerin raporunu html dosyas olarak kayıt eder.
+Ve test koşumları bittiğinde aktif tarayıcınızda test raporunu açar. Bu sebeple lütfen
+test sonlarında açılacak yeni tarayıcıyı bekleyiniz.
 
-## Installing this template
+## Kurulum
 
-    gauge --install java_maven_selenium
+Pom dosyası içerisinde yer alan Java, Gauge, Gauge Pluginleri, Maven versiyonlarını bilgisayarına kurup yollarını tanımlayınız.
 
-## Building on top of this template
+## Bu Template Üzerinde Çalışmak
 
-### Defining Specifications
+### Elinizde Olanla Yapılabilinecekler
 
-* This template includes a sample specification which opens up a browser and navigates to `Get Started` page of Gauge.
-* Add more specifications on top of sample specification.
+* Selenium 4 kullanılmakta ve bu sayede yeni ve güncel test yöntemlerini uygulayabilirsiniz.
+* Raporlama toolu entegrasyonu sayesinde otomatik olarak koşumlarınızı raporlayabilirsiniz.
+* Maven ve POM kullanımı sayesinde kendi dependencylerinizi verip yeni toollar ve kütüphaneler ekleyebilirsiniz.
+* BDD yazımı ile birlikte ayrık test koşumları ve birleşik suitler koşabilirsiniz.
+* Tag yapısı sayesinde raporlarınız ve loglarınızda testlei daha kolay seçip case tagları ile raporlayabilirsiniz.
+* WebDriverManager kullanımı ile farklı web tarayıcılarında kolaylıkla koşum yapabilirsiniz.
+* Selector mekanikleri json dosyalarına bağlı ve formatlanmış olduğu için burada vereceğiniz keylere ve elemnt türlerine göre xpath, ccs gibi farklı element typelar ile step-implementationlarınızda çalışabilirsiniz.
+* Configuration.properties içerisindeki urller ve browser belirteçleri ile kodun içine girmeden de test bazınızı değiştirebilirsiniz.
 
-Read more about [Specifications](http://getgauge.io/documentation/user/current/specifications/README.html)
 
-### Writing the implementations
+### Yeni Senaryo Eklemek
 
-This is where the java implementation of the steps would be implemented. Since this is a Selenium based project, the java implementation would invoke Selenium APIs as required.
+Yeni senaryo eklemek için step implementation içerisinde yer alan stepleri cpt dosyaları içerisinde kullanıp
+elementValues dosyası içerisinde yer alan .json dosyalarından kullanımınıza uygun keyleri bu stepler içerisine yerleştirerek concept dosyalrı hazırlayınız.
+Daha sonrasında örnek spec dosyalarındaki format ile concept bdd lerinizi test içerisinde çağırabilirsiniz.
 
-_We recommend considering modelling your tests using the [Page Object](https://github.com/SeleniumHQ/selenium/wiki/PageObjects) pattern, and the [Webdriver support](https://github.com/SeleniumHQ/selenium/wiki/PageFactory) for creating them._
+### Yaşayabileceğiniz Sorunlar ve İpuçları
+* Safari ve Firefox için otomasyon izinleri verilmelidir.
+* Target dosyası içerisinde yer alan extent-report dosyası boş görünse de silinmemeli dosya kayıt yönteminde dosya derleme için aracı konumda bulunmaktadır.
+* Versiyon problemleri için pomda yer alan versiyonlara uygun kurulumlar yapınız.
 
-- Note that every Gauge step implementation is annotated with a `Step` attribute that takes the Step text pattern as a parameter.
-Read more about [Step implementations in Java](http://getgauge.io/documentation/user/current/test_code/java/java.html)
-
-### Execution
-
-* You can execute the specification as:
-
+### Çalıştırma
+Spec dosyaları içerisinde yer alan oynatma tuşları ile test caseleri ve test suiteleri çalıştırabilirsiniz.
+* 
 ```
 mvn test
 ```
+Komutu ile de testlerinizi çalıştırabilirsiniz
