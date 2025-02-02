@@ -1,8 +1,8 @@
-package mobile.gaugeProject.helper;
+package helper;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import mobile.gaugeProject.model.ElementInfo;
+import model.ElementInfo;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,7 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-
 import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.fail;

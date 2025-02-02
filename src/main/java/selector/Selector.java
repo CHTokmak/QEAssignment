@@ -1,9 +1,8 @@
-package mobile.gaugeProject.selector;
+package selector;
 
-import mobile.gaugeProject.helper.StoreHelper;
-import mobile.gaugeProject.helper.StoreHelperElement;
-import mobile.gaugeProject.model.ElementInfo;
-import mobile.gaugeProject.model.SelectorInfo;
+import helper.StoreHelperElement;
+import model.ElementInfo;
+import model.SelectorInfo;
 import org.openqa.selenium.By;
 
 public interface Selector {

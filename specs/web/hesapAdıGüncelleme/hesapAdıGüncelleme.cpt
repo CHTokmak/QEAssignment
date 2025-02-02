@@ -1,0 +1,16 @@
+# Hesap güncelleme aracı açılır.
+* "editAccountButton" elementinin görünür olması kontrol edilir
+* "editAccountButton" elementi varsa tıkla "30"
+
+# Hesap adı kısmı valid rastgele bir değer ile doldurulur.
+* "hesapAdıInput" elementinin görünür olması kontrol edilir
+* "hesapAdıInput" elementi varsa tıkla "30"
+* "hesapAdıInput" li elementi bul, temizle ve rastgele bir değer yaz
+
+# Hesap adı güncellenir.
+* "hesapAdıUpdateButton" elementinin görünür olması kontrol edilir
+* "hesapAdıUpdateButton" elementi varsa tıkla "30"
+
+# Hesap adı güncellemesi <transferPageHesapAdı> hesap adı değiştirilerek sağlandı mı.
+* "2" saniye bekle
+* "transferSayfasıHesapAdı" elementinin text değeri <transferPageHesapAdı> değerinde tutulan değerden farklı mı

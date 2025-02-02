@@ -1,4 +1,7 @@
-package mobile.gaugeProject.selector;
+package helper;
+
+import selector.Selector;
+import selector.WebSelector;
 
 public class SelectorFactory {
 
@@ -6,13 +9,9 @@ public class SelectorFactory {
 
   }
 
-  public static Selector createElementHelper(SelectorType selectorType) {
-    Selector elementHelper = null;
-    if (selectorType == SelectorType.ANDROID) {
-      elementHelper = new AndroidSelector();
-    } else if (selectorType == SelectorType.IOS) {
-      elementHelper = new IOSSelector();
-    }
+  public static Selector createElementHelper() {
+    Selector elementHelper = new WebSelector();
+
     return elementHelper;
   }
 }

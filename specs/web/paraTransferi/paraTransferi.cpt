@@ -1,0 +1,37 @@
+# Para transferi sayfasına gidilir.
+* "paraTransferiYonlendirmeButton" elementinin görünür olması kontrol edilir
+* "paraTransferiYonlendirmeButton" elementi varsa tıkla "30"
+
+# Para transferi sayfasına yönlendirildiği kontrol edilir.
+* "myAccount" elementinin görünür olması kontrol edilir
+
+# Hesap adı <transferPageHesapAdı> keyinde tutulur.
+* "transferSayfasıHesapAdı" elementinin görünür olması kontrol edilir
+* "transferSayfasıHesapAdı" elementinin text değerini <transferPageHesapAdı> keyinde tut
+
+# Bakiye miktarı <bakiye> keyinde tutulur
+* "hesapBakiyesi" elementinin görünür olması kontrol edilir
+* "hesapBakiyesi" elementinin text değerini <bakiye> keyinde tut
+
+# Para transferi aracı açılır.
+* "transferMoneyButton" elementinin görünür olması kontrol edilir
+* "transferMoneyButton" elementi varsa tıkla "30"
+
+# Gönderici hesap adının doğru geldiği kontrol edilir: <transferPageHesapAdı>.
+* "göndericiDropDownHesapAdı" elementinin text değeri <transferPageHesapAdı> değerinde tutulan değere eşit mi
+
+# Gönderim miktarı <gönderimMiktarı> belirlenir ve gönderme işlemi gerçekleştirilir, yapılan gönderim miktarı yansıyana eşit mi kontrol edilir.
+* "gönderimMiktarıInput" elementinin görünür olması kontrol edilir
+* "gönderimMiktarıInput" elementi varsa tıkla "30"
+* "gönderimMiktarıInput" li elementi bul, temizle ve <gönderimMiktarı> değerini yaz
+* "sendButton" elementinin görünür olması kontrol edilir
+* "sendButton" elementi varsa tıkla "30"
+* "sonYapılanGönderiminMiktarı" elementinin görünür olması kontrol edilir
+* "3" saniye bekle
+* "sonYapılanGönderiminMiktarı" elementinin text değeri <gönderimMiktarı> değerine eşit mi
+
+# Güncel bakiye değeri iken işlem miktarı eski bakiye olan <bakiye> den doğru düşüldü mü kontrol edilir.
+* "sonYapılanGönderiminMiktarı" elementinin değeri <bakiye> değerinde tutulan değerden doğru düşüldü mü sonuc: "hesapBakiyesi"
+
+
+//# Alıcı hesap <alıcıHesap> olarak seçilir.

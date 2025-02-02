@@ -1,0 +1,37 @@
+[
+  {
+    "key":"addMoneyButton",
+    "value":"//*[contains(text(), 'Add money')]",
+    "type":"xpath"
+  },
+  {
+    "key":"cardNumber",
+    "value":"(//input[@autocapitalize=\"sentences\"])[1]",
+    "type":"xpath"
+  },
+  {
+    "key":"cardHolder",
+    "value":"(//input[@autocapitalize=\"sentences\"])[2]",
+    "type":"xpath"
+  },
+  {
+    "key":"expiryDate",
+    "value":"(//input[@autocapitalize=\"sentences\"])[3]",
+    "type":"xpath"
+  },
+  {
+    "key":"cvv",
+    "value":"(//input[@autocapitalize=\"sentences\"])[4]",
+    "type":"xpath"
+  },
+  {
+    "key":"amount",
+    "value":"(//input[@autocapitalize=\"sentences\"])[5]",
+    "type":"xpath"
+  },
+  {
+    "key":"addButton",
+    "value":"div[class=\"css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1awozwy r-169ebfh r-z2wwpe r-h3s6tt r-1777fci r-tsynxw r-13qz1uu\"]",
+    "type":"css"
+  }
+]

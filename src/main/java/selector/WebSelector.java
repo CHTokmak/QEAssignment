@@ -1,43 +1,39 @@
-package mobile.gaugeProject.selector;
+package selector;
 
-import mobile.gaugeProject.model.ElementInfo;
-import io.appium.java_client.MobileBy;
+import model.ElementInfo;
 import org.openqa.selenium.By;
 
-public class AndroidSelector implements Selector {
+public class WebSelector implements Selector {
 
   @Override
   public By getElementInfoToBy(ElementInfo elementInfo) {
     By by = null;
-    String androidType = elementInfo.getAndroidType();
-    String androidValue = elementInfo.getAndroidValue();
-    switch (androidType){
+    String elementType = elementInfo.getType();
+    String elementValue = elementInfo.getValue();
+    switch (elementType){
       case "css":
-        by = MobileBy.cssSelector(androidValue);
+        by = By.cssSelector(elementValue);
         break;
       case "id":
-        by = MobileBy.id(androidValue);
+        by = By.id(elementValue);
         break;
       case "xpath":
-        by = MobileBy.xpath(androidValue);
+        by = By.xpath(elementValue);
         break;
       case "class":
-        by = MobileBy.className(androidValue);
+        by = By.className(elementValue);
         break;
       case "text":
-        by = MobileBy.linkText(androidValue);
-        break;
-      case "androidUI":
-        by = MobileBy.AndroidUIAutomator(androidValue);
+        by = By.linkText(elementValue);
         break;
       default:
-        throw new NullPointerException(elementInfo.getKey() + " keyine sahip elementin " + "\"" + androidType + "\"" + " android tip değeri bulunamadı.");
+        throw new NullPointerException(elementInfo.getKey() + " keyine sahip elementin " + "\"" + elementType + "\"" + " değeri bulunamadı.");
     }
     return by;
   }
 
   @Override
   public int getElementInfoToIndex(ElementInfo elementInfo) {
-    return elementInfo.getAndroidIndex();
+    return elementInfo.getIndex();
   }
 }

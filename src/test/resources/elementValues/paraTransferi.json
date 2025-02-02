@@ -1,0 +1,48 @@
+[
+  {
+    "key":"myAccount",
+    "value":"(//div[@class=\"css-146c3p1 r-1gknse6 r-1b43r93\"])[1]",
+    "type":"xpath"
+  },
+  {
+    "key":"paraTransferiYonlendirmeButton",
+    "value":"div[class=\"css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1awozwy r-169ebfh r-z2wwpe r-h3s6tt r-1777fci r-tsynxw r-11c0sde r-13qz1uu\"]",
+    "type":"css"
+  },
+  {
+    "key":"transferMoneyButton",
+    "value":"//*[contains(text(), 'Transfer money')]",
+    "type":"xpath"
+  },
+  {
+    "key":"transferSayfasıHesapAdı",
+    "value":"(//div[@class=\"css-146c3p1 r-1ozpqpt r-yv33h5 r-1b43r93\"])[1]",
+    "type":"xpath"
+  },
+  {
+    "key":"göndericiDropDownHesapAdı",
+    "value":"(//option[@value=\"c8fa5691-63fa-4cc2-962f-6d7837ec7a18\"])[1]",
+    "type":"xpath"
+  },
+  {
+    "key":"gönderimMiktarıInput",
+    "value":"input[class=\"css-11aywtz r-6taxm2 r-1eh6qqt r-z2wwpe r-rs99b7 r-h3s6tt r-1qhn6m8\"]",
+    "type":"css"
+  },
+  {
+    "key":"sendButton",
+    "value":"div[class=\"css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1awozwy r-169ebfh r-z2wwpe r-h3s6tt r-1777fci r-tsynxw r-13qz1uu\"]",
+    "type":"css"
+  },
+  {
+    "key":"sonYapılanGönderiminMiktarı",
+    "value":"(//div[@class=\"css-146c3p1 r-1ozpqpt r-yv33h5 r-1b43r93\"])[5]",
+    "type":"xpath"
+  },
+  {
+    "key":"hesapBakiyesi",
+    "value":"(//div[@class=\"css-146c3p1 r-1ozpqpt r-yv33h5 r-1b43r93\"])[4]",
+    "type":"xpath"
+  }
+
+]

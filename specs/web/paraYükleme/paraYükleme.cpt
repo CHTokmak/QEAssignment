@@ -1,0 +1,24 @@
+# Para yükleme aracı açılır.
+* "addMoneyButton" elementinin görünür olması kontrol edilir
+* "addMoneyButton" elementi varsa tıkla "30"
+
+# Valid kart bilgileri ve yatırım miktarı girilir.
+* "3" saniye bekle
+* "cardNumber" elementi varsa tıkla "30"
+* "cardNumber" li elemente "1234123412341234" değerini yaz
+* "cardHolder" elementi varsa tıkla "30"
+* "cardHolder" li elemente "Can Harun Tokmak" değerini yaz
+* "expiryDate" elementi varsa tıkla "30"
+* "expiryDate" li elemente "04/28" değerini yaz
+* "cvv" elementi varsa tıkla "30"
+* "cvv" li elemente "110" değerini yaz
+* "amount" elementi varsa tıkla "30"
+* "amount" li elemente "100" değerini yaz
+* "hesapAdıUpdateButton" elementinin görünür olması kontrol edilir
+* "hesapAdıUpdateButton" elementi varsa tıkla "30"
+
+# Yatırım miktarı <yatırımMiktarı> işlem geçmişine ve bakiyeye <bakiye> doğru eklendi mi kontrol edilir
+* "sonYapılanGönderiminMiktarı" elementinin görünür olması kontrol edilir
+* "3" saniye bekle
+* "sonYapılanGönderiminMiktarı" elementinin text değeri <yatırımMiktarı> değerine eşit mi
+* "sonYapılanGönderiminMiktarı" elementinin değeri <bakiye> değerinde tutulan değere doğru eklendi mi sonuc: "hesapBakiyesi"

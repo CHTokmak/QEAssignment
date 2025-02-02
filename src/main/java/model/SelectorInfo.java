@@ -1,4 +1,4 @@
-package mobile.gaugeProject.model;
+package model;
 
 import org.openqa.selenium.By;
 
